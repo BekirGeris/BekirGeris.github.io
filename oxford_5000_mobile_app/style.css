@@ -792,40 +792,86 @@ header {
 .download .underline:after {
 	background-color: #BBB;
 }
-.download .download-area {
-	display: flex; /* Flexbox düzenini etkinleştirir */
-	justify-content: center; /* Butonları yatayda ortalar */
-	align-items: center; /* Dikeyde hizalar (isteğe bağlı) */
-	gap: 20px; /* Butonlar arasındaki boşluk */
-	flex-wrap: wrap; /* Butonlar dar ekranlarda alt alta dizilir */
+.square-image {
+	position: relative;
+	width: 100%; /* Genişlik %100 olacak */
+	padding-top: 100%; /* Yükseklik genişlik ile aynı olacak, kare yapar */
+	margin-bottom: 20px; /* Butonla arada boşluk bırakır */
+	overflow: hidden; /* Görsel taşarsa gizler */
   }
   
-  .download .download-area img {
+  .square-image img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: contain; /* Görseli tamamen sığdır, kesilmeden */
+	transform: translate(-50%, -50%); /* Görseli tam ortalar */
+  }
+.download .download-area .play-store {
 	width: 30px;
+	float: left;
 	margin-top: 15px;
-	float: none; /* Float kaldırılır */
-  }
-  
-  .download .download-area .download-btn {
+}
+.download .download-area .download-btn {
 	font-size: 28px;
 	padding: 12px 0 10px 10px;
 	min-width: 263px;
-	margin: 0; /* margin kaldırılarak hizalamaya bırakılır */
-	display: flex; /* Flex düzeni */
-	align-items: center; /* İkon ve metni hizalar */
-  }
-  
-  .download .download-area .app-download {
-	margin-left: 10px; /* Buton içindeki metin hizalaması */
+	margin-bottom: 100px;
+	display: table;
+}
+.download .download-area span {
+	display: block;
+	font-size: 18px;
+	margin-bottom: -5px;
+}
+.download .download-area a i {
+	float: left;
+	margin-top: 15px;
+}
+.download .download-area a i.fa-mobile {
+	font-size: 50px;
+	margin-top: 5px;
+}
+.download .download-area .app-download {
+	margin-left: 40px;
 	text-align: left;
 	font-weight: 100;
-  }
-  
-  .download .download-area a i {
-	margin-top: 0; /* Gereksiz marj kaldırılır */
-	font-size: 50px;
-  }
-  
+}
+.download .download-area .app-download strong {
+	font-weight: 300;
+}
+.download {
+  display: flex;
+  flex-direction: column; /* İçeriği dikey olarak hizalar */
+  align-items: center; /* Yatayda ortalar */
+  justify-content: center; /* Dikeyde ortalar */
+  text-align: center; /* Yazı hizalaması */
+}
+
+.download-area {
+  display: flex; /* Flex düzenini etkinleştirir */
+  justify-content: center; /* Butonları yatayda ortalar */
+  gap: 20px; /* Butonlar arasında boşluk */
+  flex-wrap: wrap; /* Ekran daraldığında butonları alt alta dizmek için */
+}
+
+.download-area .col-xs-12,
+.download-area .col-sm-6,
+.download-area .col-md-6,
+.download-area .col-lg-3 {
+  max-width: none; /* Bootstrap grid sınırlamalarını kaldırır */
+}
+
+.download-btn {
+  display: flex; /* Buton içeriğini hizalamak için flexbox */
+  flex-direction: row; /* İkon ve metni yan yana hizalar */
+  align-items: center; /* Dikeyde ortalar */
+  justify-content: center; /* İçeriği yatayda ortalar */
+  gap: 10px; /* İkon ve metin arasına boşluk ekler */
+}
+/* Kare görsel için stil */
 
 /* =========================================
    13. Section Footer                 
