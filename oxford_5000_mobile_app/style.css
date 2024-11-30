@@ -825,6 +825,29 @@ header {
 	margin-top: 0; /* Gereksiz marj kaldırılır */
 	font-size: 50px;
   }
+  .download-area {
+	display: flex; /* Flexbox düzenini etkinleştirir */
+	justify-content: center; /* Butonları yatayda ortalar */
+	align-items: center; /* Dikeyde hizalar */
+	gap: 20px; /* Butonlar arası boşluk */
+	flex-wrap: wrap; /* Dar ekranlarda butonları alt alta dizmek için */
+  }
+  
+  .download-area .col-xs-12, 
+  .download-area .col-sm-6, 
+  .download-area .col-md-6, 
+  .download-area .col-lg-3 {
+	flex: 0 0 auto; /* Flex düzeninde genişlik */
+	max-width: none; /* Varsayılan grid genişliği kaldırılır */
+  }
+  
+  .download-area a {
+	text-align: center; /* Linklerin içeriğini ortalar */
+  }
+  
+  .download-area .download-btn {
+	margin: 0; /* Varsayılan margin kaldırılır */
+  }
   
 
 /* =========================================
