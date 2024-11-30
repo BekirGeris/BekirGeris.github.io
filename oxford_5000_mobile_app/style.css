@@ -792,41 +792,40 @@ header {
 .download .underline:after {
 	background-color: #BBB;
 }
-.download .download-area img {
+.download .download-area {
+	display: flex; /* Flexbox düzenini etkinleştirir */
+	justify-content: center; /* Butonları yatayda ortalar */
+	align-items: center; /* Dikeyde hizalar (isteğe bağlı) */
+	gap: 20px; /* Butonlar arasındaki boşluk */
+	flex-wrap: wrap; /* Butonlar dar ekranlarda alt alta dizilir */
+  }
+  
+  .download .download-area img {
 	width: 30px;
-	float: left;
 	margin-top: 15px;
-}
-.download .download-area .download-btn {
+	float: none; /* Float kaldırılır */
+  }
+  
+  .download .download-area .download-btn {
 	font-size: 28px;
 	padding: 12px 0 10px 10px;
 	min-width: 263px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-	display: table;
-}
-.download .download-area span {
-	display: block;
-	font-size: 18px;
-	margin-bottom: -5px;
-}
-.download .download-area a i {
-	float: left;
-	margin-top: 15px;
-}
-.download .download-area a i.fa-mobile {
-	font-size: 50px;
-	margin-top: 5px;
-}
-.download .download-area .app-download {
-	margin-left: 40px;
+	margin: 0; /* margin kaldırılarak hizalamaya bırakılır */
+	display: flex; /* Flex düzeni */
+	align-items: center; /* İkon ve metni hizalar */
+  }
+  
+  .download .download-area .app-download {
+	margin-left: 10px; /* Buton içindeki metin hizalaması */
 	text-align: left;
 	font-weight: 100;
-}
-.download .download-area .app-download strong {
-	font-weight: 300;
-}
+  }
+  
+  .download .download-area a i {
+	margin-top: 0; /* Gereksiz marj kaldırılır */
+	font-size: 50px;
+  }
+  
 
 /* =========================================
    13. Section Footer                 
