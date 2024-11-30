@@ -783,7 +783,6 @@ header {
 ========================================= */
 #download {
 	background: url(images/bg.jpg) 50% 0 no-repeat fixed;
-	background-size: cover;
 }
 .download {
 	background-image: url(images/pattern5.png);
