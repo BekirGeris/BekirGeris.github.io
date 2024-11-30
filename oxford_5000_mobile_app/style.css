@@ -782,14 +782,9 @@ header {
    12. Section Download                 
 ========================================= */
 #download {
-	background: url(images/bg.jpg) 50% 0 no-repeat fixed;
-}
-.download {
-	background-image: url(images/pattern5.png);
-}
-.download .underline:before,
-.download .underline:after {
-	background-color: #BBB;
+    background: url(images/bg.jpeg) no-repeat center center fixed;
+    background-size: cover; /* Görseli elementin tüm alanını kaplayacak şekilde ölçeklendir */
+    height: 100vh; /* Sayfanın yüksekliği kadar olacak şekilde ayarlayın */
 }
 .square-image {
 	position: relative;
