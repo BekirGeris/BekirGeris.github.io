@@ -792,8 +792,15 @@ header {
 ========================================= */
 #download {
     background: url(images/bg.jpeg) no-repeat center center fixed;
-    background-size: cover; /* Görseli elementin tüm alanını kaplayacak şekilde ölçeklendir */
+    background-size: contain; /* Görseli elementin tüm alanını kaplayacak şekilde ölçeklendir */
     height: 100vh; /* Sayfanın yüksekliği kadar olacak şekilde ayarlayın */
+}
+/* Telefon ekranları için farklı arka plan */
+@media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
+    #download {
+        background: url(images/bg_mobile.jpeg) no-repeat center center fixed;
+        background-size: cover; /* Gerekirse farklı bir boyutlandırma seçeneği */
+    }
 }
 .square-image {
 	position: relative;
