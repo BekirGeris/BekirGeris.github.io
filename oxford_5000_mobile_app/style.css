@@ -224,6 +224,12 @@ header {
 	background: url(images/bg_4.png) 50% 0 no-repeat fixed;
 	background-size: contain;
 }
+@media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
+	header {
+	  background: url(images/bg_4_mobile.jpeg) 50% 0 no-repeat fixed;
+	  background-size: cover; /* Gerekirse boyutlandırma stilini değiştirin */
+	}
+  }
 .top .photo-slide {
 	max-width: 252px;
 	margin: auto;
