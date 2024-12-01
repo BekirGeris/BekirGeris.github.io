@@ -791,14 +791,13 @@ header {
    12. Section Download                 
 ========================================= */
 #download {
-    background: url(images/bg.jpeg) no-repeat center center fixed;
+	background: url(images/bg.jpeg) 50% 0 no-repeat fixed;
     background-size: cover; /* Görseli elementin tüm alanını kaplayacak şekilde ölçeklendir */
-    height: 100vh; /* Sayfanın yüksekliği kadar olacak şekilde ayarlayın */
 }
 /* Telefon ekranları için farklı arka plan */
 @media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
     #download {
-        background: url(images/bg_mobile.jpeg) no-repeat center center fixed;
+		background: url(images/bg_mobile.jpeg) 50% 0 no-repeat fixed;
         background-size: cover; /* Gerekirse farklı bir boyutlandırma seçeneği */
     }
 }
