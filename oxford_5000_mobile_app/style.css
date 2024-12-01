@@ -795,12 +795,15 @@ header {
     background-size: cover; /* Görseli elementin tüm alanını kaplayacak şekilde ölçeklendir */
 }
 /* Telefon ekranları için farklı arka plan */
-@media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
+@media (max-width: 768px) {
     #download {
-		background: url(images/bg_mobile.jpeg) 50% 0 no-repeat fixed;
-        background-size: cover; /* Gerekirse farklı bir boyutlandırma seçeneği */
+        background: url(images/bg_mobile.jpeg) no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll; /* Arka planın sabitlenmesini engelle */
+        min-height: 100vh; /* Yüksekliği ekran boyutuna göre ayarla */
     }
 }
+
 .square-image {
 	position: relative;
 	width: 100%; /* Genişlik %100 olacak */
