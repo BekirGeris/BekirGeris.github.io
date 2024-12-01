@@ -173,7 +173,8 @@ textarea:focus {
 }
 /* service lists */
 .service { margin-bottom: 20px }
-.service .media-right i.fa {
+.service .media-right i.fa,
+.service .media-right i.fa-solid {
     text-align: center;
     font-size: 30px;
     background-color: #0099FF;
@@ -187,7 +188,8 @@ textarea:focus {
     height: 80px;
     transition: background-color 0.5s;
 }
-.service .media-left i.fa {
+.service .media-left i.fa,
+.service .media-left i.fa-solid {
     text-align: center;
     font-size: 30px;
     background-color: #0099FF;
@@ -202,6 +204,7 @@ textarea:focus {
     transition: background-color 0.5s;
 }
 .process:hover i.fa,
+.process:hover i.fa-solid,
 .service:hover i.fa { background-color: #333333 }
 h4.media-heading {
     margin-top: 0;
