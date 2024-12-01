@@ -227,7 +227,7 @@ header {
 @media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
 	header {
 	  background: url(images/bg_4_mobile.jpeg) 50% 0 no-repeat fixed;
-	  background-size: contain; /* Gerekirse boyutlandırma stilini değiştirin */
+	  background-size: cover; /* Gerekirse boyutlandırma stilini değiştirin */
 	}
   }
 .top .photo-slide {
@@ -799,7 +799,7 @@ header {
 @media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
     #download {
         background: url(images/bg_mobile.jpeg) no-repeat center center fixed;
-        background-size: contain; /* Gerekirse farklı bir boyutlandırma seçeneği */
+        background-size: cover; /* Gerekirse farklı bir boyutlandırma seçeneği */
     }
 }
 .square-image {
