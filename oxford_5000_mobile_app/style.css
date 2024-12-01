@@ -218,8 +218,8 @@ h4.media-heading {
    3. Section Header                 
 ========================================= */
 header {
-	background: url(images/bg.jpg) 50% 0 no-repeat fixed;
-	background-size: cover;
+	background: url(images/bg_4.png) 50% 0 no-repeat fixed;
+	background-size: contain;
 }
 .top .photo-slide {
 	max-width: 252px;
