@@ -112,6 +112,13 @@ ul li {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+@media (max-width: 768px) {
+	.button {
+	  display: flex;
+	  justify-content: center;  /* Yatayda ortalama */
+	  align-items: center;      /* Dikeyde ortalama */
+	}
+  }
 .custom-btn:hover {
 	background-color: #0099FF;
 	color: #fff;
@@ -797,10 +804,9 @@ header {
 /* Telefon ekranları için farklı arka plan */
 @media (max-width: 768px) {
     #download {
-        background: url(images/bg_mobile.jpeg) no-repeat center center;
-        background-size: cover;
-        background-attachment: scroll; /* Arka planın sabitlenmesini engelle */
-        min-height: 100vh; /* Yüksekliği ekran boyutuna göre ayarla */
+		background: url(images/bg_mobile.jpeg) 50% 0 no-repeat fixed;
+		background-size: cover; /* Gerekirse boyutlandırma stilini değiştirin */
+		height: 100%; /* Yüksekliği ekran boyutuna göre tam ayarla */
     }
 }
 

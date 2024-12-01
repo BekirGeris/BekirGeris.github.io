@@ -38,29 +38,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <script>
-      document.getElementById("download-app1").addEventListener("click", function (event) {
-    event.preventDefault(); // Varsayılan bağlantı davranışını engeller
 
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    // iPhone kontrolü
-    if (/iPhone/i.test(userAgent)) {
-        window.location.href = "https://apps.apple.com/app/id6479473338"; // iPhone için yönlendirme
-    }
-    // Android kontrolü
-    else if (/android/i.test(userAgent)) {
-        window.location.href = "https://play.google.com/store/apps/details?id=com.begers.fitnessapp"; // Android için yönlendirme
-    }
-    // Mobil cihaz değilse
-    else {
-        window.location.href = "#download"; // Mobil cihaz değilse indirme bölümüne yönlendirme
-    }
-});
-
-    </script>
     <!-- ====== Header Section ====== -->
     <header id="top">
       <div class="bg-color">
@@ -73,7 +55,7 @@
                   <h1><strong>Fitness - Bodybuilding</strong></h1>
 				  <h2>Build your dream body and embrace a healthier lifestyle!</h2> 
                   <div class="button">
-                    <a id="download-app1" class="btn btn-default btn-lg custom-btn">Download App</a>
+                    <input class="btn btn-default btn-lg custom-btn" type="button" value="Download App" id="MyButton">
                   </div> <!-- end .button -->
                 </div> <!-- end .content -->
               </div> <!-- end .top > .container> .row> .col-md-7 -->
