@@ -228,8 +228,8 @@ h4.media-heading {
    3. Section Header                 
 ========================================= */
 header {
-	background: url(images/bg_4.png) 50% 0 no-repeat fixed;
-	background-size: contain;
+	background: url(images/bg_4.jpeg) 50% 0 no-repeat fixed;
+	background-size: cover;
 }
 @media (max-width: 768px) { /* 768px veya daha küçük ekranlar için */
 	header {
